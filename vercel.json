@@ -1,0 +1,7 @@
+{
+  "framework": "go",
+  "buildCommand": "cd backend && go build -o server ./cmd/server",
+  "outputDirectory": "backend",
+  "installCommand": "cd backend && go mod download",
+  "devCommand": "cd backend && go run ./cmd/server"
+}
