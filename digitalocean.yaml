@@ -1,0 +1,46 @@
+name: sub2api
+region: nyc
+
+services:
+  - name: sub2api
+    github:
+      repo: anbeime/api-token
+      branch: master
+      deploy_on_push: true
+    dockerfile_path: deploy/Dockerfile
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    environment:
+      - key: AUTO_SETUP
+        value: "true"
+      - key: SERVER_MODE
+        value: "release"
+      - key: DATABASE_HOST
+        value: ${database.DATABASE_HOST}
+      - key: DATABASE_PORT
+        value: ${database.DATABASE_PORT}
+      - key: DATABASE_USER
+        value: ${database.DATABASE_USER}
+      - key: DATABASE_PASSWORD
+        value: ${database.DATABASE_PASSWORD}
+      - key: DATABASE_DBNAME
+        value: ${database.DATABASE_NAME}
+      - key: DATABASE_SSLMODE
+        value: "disable"
+      - key: REDIS_HOST
+        value: ${database.REDIS_HOST}
+      - key: REDIS_PORT
+        value: ${database.REDIS_PORT}
+      - key: REDIS_PASSWORD
+        value: ${database.REDIS_PASSWORD}
+
+databases:
+  - name: sub2api-db
+    engine: PG
+    version: "15"
+    size: db-s-dev-database
+  - name: sub2api-redis
+    engine: REDIS
+    version: "7"
+    size: db-s-dev-database
