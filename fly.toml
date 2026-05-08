@@ -1,0 +1,22 @@
+app = "sub2api"
+region = "sin"
+
+[build]
+  dockerfile = "Dockerfile.fly"
+
+[http_service]
+  port = 8080
+  force_https = true
+
+[[services]]
+  protocol = "tcp"
+  port = 8080
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
+
+[env]
+  AUTO_SETUP = "true"
+  SERVER_MODE = "release"
