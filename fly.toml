@@ -2,21 +2,19 @@ app = "sub2api"
 region = "sin"
 
 [build]
-  dockerfile = "Dockerfile.fly"
+  image = "weishaw/sub2api:latest"
 
 [http_service]
   port = 8080
   force_https = true
 
-[[services]]
-  protocol = "tcp"
-  port = 8080
-
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
-  memory_mb = 256
+  memory_mb = 512
 
 [env]
   AUTO_SETUP = "true"
   SERVER_MODE = "release"
+  LOG_LEVEL = "info"
+  LOG_FORMAT = "json"
