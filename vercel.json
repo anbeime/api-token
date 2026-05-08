@@ -1,7 +1,8 @@
 {
-  "framework": "vite",
-  "buildCommand": "cd frontend && pnpm install && pnpm run build",
-  "outputDirectory": "frontend/dist",
-  "installCommand": "cd frontend && pnpm install",
-  "devCommand": "cd frontend && pnpm run dev"
+  "projects": [
+    {
+      "root": "frontend",
+      "framework": "vite"
+    }
+  ]
 }
