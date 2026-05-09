@@ -7,6 +7,7 @@ region = "sin"
 [http_service]
   port = 8080
   force_https = true
+  auto_stop_machines = false
 
 [[vm]]
   cpu_kind = "shared"
