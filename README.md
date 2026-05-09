@@ -1,4 +1,4 @@
-# Sub2API
+# TOPGO API KEY
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 <a href="https://trendshift.io/repositories/21823" target="_blank"><img src="https://trendshift.io/api/badge/repositories/21823" alt="Wei-Shaw%2Fsub2api | Trendshift" width="250" height="55"/></a>
 
-**AI API Gateway Platform for Subscription Quota Distribution**
+**AI API Key Management Platform**
 
 English | [中文](README_CN.md) | [日本語](README_JA.md)
 
@@ -22,7 +22,7 @@ English | [中文](README_CN.md) | [日本語](README_JA.md)
 
 ## Demo
 
-Try Sub2API online: **[https://demo.sub2api.org/](https://demo.sub2api.org/)**
+Try TOPGO API KEY online
 
 Demo credentials (shared demo environment; **not** created automatically for self-hosted installs):
 
@@ -32,7 +32,7 @@ Demo credentials (shared demo environment; **not** created automatically for sel
 
 ## Overview
 
-Sub2API is an AI API gateway platform designed to distribute and manage API quotas from AI product subscriptions. Users can access upstream AI services through platform-generated API Keys, while the platform handles authentication, billing, load balancing, and request forwarding.
+TOPGO API KEY is an AI API gateway platform designed to distribute and manage API quotas from AI product subscriptions. Users can access upstream AI services through platform-generated API Keys, while the platform handles authentication, billing, load balancing, and request forwarding.
 
 ## Features
 
